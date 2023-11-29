@@ -5,7 +5,7 @@ import altair as alt
 
 @st.cache_data
 def get_data():
-    path_= 'dataset/vgsales.csv'
+    path_= 'vgsales.csv'
     df = pd.read_csv(path_)
     # cleaning Year columns
     df.Year =df.Year.astype('str')
